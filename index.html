@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Curso JavaScript</title>
+	</head>
+	<body>
+		<script>
+
+			//setInterval = tempo de exibição da função
+			function exibir() {
+				console.log('Olá JavaScript');
+			}
+			//setInterval(exibir, 200);
+
+			//setTimeOut = Tempo em ms para aparecer o conteudo
+			setTimeout(exibir, 3000);
+
+			//Condição ternária = Substitiu o if-else
+			var sexo = 'F';
+			var retorno = (sexo === 'M') ? 'Masculino' : 'Feminino';
+			console.log(retorno);
+
+			/*
+			// Funções
+			function retornaSexo(sexo) {
+				switch (sexo) {
+					case 'M': return 'Masculino';
+					case 'F': return 'Feminino';
+					default:  return 'Outros';
+				}
+				
+			}
+			var sexo = retornaSexo('M');
+			console.log(sexo);
+			
+			
+			function mult(nro1, nro2) {
+				var result = nro2 * nro1;
+				
+				return result
+			}
+			var resultado = mult(2, 3);
+			console.log(resultado);
+
+			
+			var x = 15, y = 20;
+			x += 3;
+			y /= 3;
+
+			//Vetor
+			var colaboradores = ['Bruno', 'Monique', 'Lucas'];
+			
+			Objeto com atributos
+			var colaborador = {
+				nome: 'Lucas',
+				idade: 25,
+				peso: 95.50
+			};
+
+			Formas de acesso
+			console.log(x, y);
+			console.log(colaborador.idade);
+			console.log(colaboradores);
+			console.log(colaboradores[1]);*/
+		</script>
+	</body>
+</html>
