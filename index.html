@@ -4,9 +4,21 @@
 		<title>Curso JavaScript</title>
 	</head>
 	<body>
+
+	<div id="app">
+		<button onclick="alerta()">On Click</button>
+		<button onmouseover="alerta()">On Mouse Over</button>
+		<input onkeypress="alerta()">
+	</div>
+
 		<script>
 
-			//setInterval = tempo de exibição da função
+			function alerta() {
+				alert('Botão foi clicado');
+			}
+
+
+			/*setInterval = tempo de exibição da função
 			function exibir() {
 				console.log('OmniStack JavaScript');
 			}
@@ -20,7 +32,6 @@
 			var retorno = (sexo === 'M') ? 'Masculino' : 'Feminino';
 			console.log(retorno);
 
-			/*
 			// Funções
 			function retornaSexo(sexo) {
 				switch (sexo) {

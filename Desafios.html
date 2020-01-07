@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Exercícios</title>
+		<title>Desafios - Fase 1</title>
 	</head>
 	
 	<body>
@@ -49,6 +49,42 @@
 		console.log(result)
 		*/
 
+		//EXERCICIO 4
+		/*
+		function retornaExperiencia(ano) {
+			if(ano > 0 && ano <= 1){
+				return "Iniciante";
+			} else if (ano > 1 && ano <= 3) {
+				return "Intermediario";
+			} else if (ano > 3 && ano <=6) {
+				return "Avancado";
+			} else 	return "Mestre Jedi";
+		}
+		
+		var anoEstudos = 2
+		var experiencia = retornaExperiencia(anoEstudos);
+		console.log(experiencia)
+		*/
+
+		//EXERCICIO 5
+		let usuarios = [
+			{
+				nome: 'Diego',
+				habilidades: ['JavaScript', 'ReactJS', 'Redux']
+			},
+
+			{
+				nome: 'Gabriel',
+				habilidades: ['VueJS', 'Ruby On Rails', 'Elixir']
+			}
+		];
+
+		//console.log(usuarios);
+
+		for (let users of usuarios){
+			console.log('O ' + users.nome + ' possui as habilidades: ' + users.habilidades.join(', '));
+		}
+		
 	</script>
 	</body>
 </html>
